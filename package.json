@@ -1,11 +1,17 @@
 {
   "name": "uppercase-client-extension",
+  "author": "Remco Stoeten",
+  "Author github": "https://github.com/remcostoeten",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remcostoeten/vscode-extension-insert-use-client-for-nextjs-with-ease"
+  },
   "displayName": "Uppercase Client Insertion",
   "description": "Inserts 'use client' directive and new line",
   "version": "0.0.1",
- "engines": {
-  "vscode": "^1.92.0"
-},
+  "engines": {
+    "vscode": "^1.92.0"
+  },
   "categories": [
     "Other"
   ],
@@ -29,13 +35,25 @@
       }
     ]
   },
-"scripts": {
-  "vscode:prepublish": "npm run build",
-  "build": "node esbuild.js --minify",
-  "watch": "node esbuild.js --watch"
-},
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "node esbuild.js --minify",
+    "watch": "node esbuild.js --watch"
+  },
   "devDependencies": {
     "@types/vscode": "^1.92.0",
     "esbuild": "^0.23.0"
-  }
+  },
+  "publisher": "remco-stoeten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/remcostoeten/vscode-extension-insert-use-client-for-nextjs-with-ease/issues"
+  },
+  "homepage": "https://github.com/remcostoeten/vscode-extension-insert-use-client-for-nextjs-with-ease#readme",
+  "keywords": [
+    "vscode",
+    "extension",
+    "nextjs",
+    "use client"
+  ]
 }

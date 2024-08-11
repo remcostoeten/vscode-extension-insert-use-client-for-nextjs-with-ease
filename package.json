@@ -1,0 +1,41 @@
+{
+  "name": "uppercase-client-extension",
+  "displayName": "Uppercase Client Insertion",
+  "description": "Inserts 'use client' directive and new line",
+  "version": "0.0.1",
+ "engines": {
+  "vscode": "^1.92.0"
+},
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.insertUppercaseClient"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.insertUppercaseClient",
+        "title": "Insert Uppercase Client"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.insertUppercaseClient",
+        "key": "ctrl+shift+i",
+        "mac": "cmd+shift+i",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+"scripts": {
+  "vscode:prepublish": "npm run build",
+  "build": "node esbuild.js --minify",
+  "watch": "node esbuild.js --watch"
+},
+  "devDependencies": {
+    "@types/vscode": "^1.92.0",
+    "esbuild": "^0.23.0"
+  }
+}

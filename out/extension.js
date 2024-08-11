@@ -1,0 +1,5 @@
+var a=Object.create;var c=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var v=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,u=Object.prototype.hasOwnProperty;var l=(e,t)=>{for(var n in t)c(e,n,{get:t[n],enumerable:!0})},d=(e,t,n,s)=>{if(t&&typeof t=="object"||typeof t=="function")for(let o of v(t))!u.call(e,o)&&o!==n&&c(e,o,{get:()=>t[o],enumerable:!(s=p(t,o))||s.enumerable});return e};var x=(e,t,n)=>(n=e!=null?a(m(e)):{},d(t||!e||!e.__esModule?c(n,"default",{value:e,enumerable:!0}):n,e)),f=e=>d(c({},"__esModule",{value:!0}),e);var b={};l(b,{activate:()=>w,deactivate:()=>C});module.exports=f(b);var i=x(require("vscode"));function w(e){let t=i.commands.registerCommand("extension.insertUppercaseClient",()=>{let n=i.window.activeTextEditor;if(n){let s=n.document;n.edit(o=>{s.lineAt(0).text.includes('"use client";')||o.insert(new i.Position(0,0),`"use client";
+
+`);let r=n.selection.active;o.insert(r,`
+`)})}});e.subscriptions.push(t)}function C(){}0&&(module.exports={activate,deactivate});
+//# sourceMappingURL=extension.js.map

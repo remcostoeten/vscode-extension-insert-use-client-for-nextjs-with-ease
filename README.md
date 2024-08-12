@@ -8,6 +8,8 @@ This VSCode extension helps you easily insert the `'use client'` directive at th
 - type `> extension install from vsix` or > `vsix`  will do. > Enter
 -Search for `nextjs-use-client-inserter-helper-1.0.0.vsix` and install that and g2g.
 
+![aoutput](https://github.com/user-attachments/assets/318dd2d8-b05c-4f74-a396-3ecbc710f9a7)
+
 ## Features
 
 - Inserts `'use client'` at line 1 of your file.

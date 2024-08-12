@@ -41,16 +41,11 @@ This VSCode extension helps you easily insert the `'use client'` directive at th
     <small>For this step the vsce cli is needed. Google for this, easy install. Or just directly install the `.vsix` from the repo.
 5. **Open the project in VSCode**:
     ```bash
-vsce package
+       vsce package
        ``` 
 
-7. **Launch the extension**:
-    - Press `F5` to open a new VSCode window with your extension loaded.
-
 ## Usage
-
-- Use the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) and search for `Insert 'use client' at line 1 on shortcut`.
-- The directive will be inserted at the top of the active file or at the cursor position based on your configuration.
+  Refer to TLDR section
 
 ## Configuration
 

@@ -16,13 +16,6 @@ This VSCode extension helps you easily insert the `'use client'` directive at th
 - Configurable to insert the directive at the current cursor position instead.
 - Avoids inserting duplicate directives if it's already present at the top.
 
-## Installation
-
-### Prerequisites
-
-- Ensure you have [Visual Studio Code](https://code.visualstudio.com/) installed.
-- Node.js and npm should also be installed on your system.
-
 ### Local Installation
 
 1. **Clone the repository**:
@@ -45,12 +38,13 @@ This VSCode extension helps you easily insert the `'use client'` directive at th
     npm run build
     ```
 
+    <small>For this step the vsce cli is needed. Google for this, easy install. Or just directly install the `.vsix` from the repo.
 5. **Open the project in VSCode**:
     ```bash
-    code .
-    ``` 
+vsce package
+       ``` 
 
-6. **Launch the extension**:
+7. **Launch the extension**:
     - Press `F5` to open a new VSCode window with your extension loaded.
 
 ## Usage

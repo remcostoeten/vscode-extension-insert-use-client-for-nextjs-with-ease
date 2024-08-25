@@ -3,6 +3,10 @@
 This VSCode extension helps you easily insert the `'use client'` directive at the top of your Next.js client components. The extension provides a command to insert `'use client'` at line 1 or at the current cursor position based on your preference.
 
  ## TLDR
+ - Install from official marketplace [here](https://marketplace.visualstudio.com/items?itemName=RemcoStoeten.nextjs-use-client-inserter-helper)
+
+#### Or work with the source:
+ 
 - Open VSCODE
 - Open options menu `ctrl/cmd + p` (or rebind to `ctrl + ctrl` like a real gigachad)
 - type `> extension install from vsix` or > `vsix`  will do. > Enter
